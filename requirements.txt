@@ -4,3 +4,5 @@ flask-migrate
 pymysql
 Flask-Seeder
 python-dotenv
+redis
+rq
