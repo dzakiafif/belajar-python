@@ -5,10 +5,10 @@ def success(data):
     response["status"] = "success"
     response["code"] = 200
     
-    if len(data) == 0:
-        response["data"] = []
-    else:
-        if data["data"] in data:
+    response["data"] = []
+    
+    if data:
+        if "data" in data:
             response["data"] = data["data"]
 
     return make_response(jsonify(response)),200
